@@ -1,0 +1,79 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.stopwatch {
+    background: linear-gradient(var(--primary), var(--secondary));    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+  .display {
+    background: #1c1e22; 
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 2em;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4); 
+}
+  
+  button {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+  }
+
+  button:hover {
+    transform: scale(1.1); /* scale up on hover */
+  }
+  
+  button#startBtn {
+    background: #4a9;
+  }
+  
+  button#stopBtn {
+    background: #f92;
+  } 
+  
+  button#resetBtn {
+    background: #36f;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+  :root {
+    --primary: #3498db;
+    --secondary: #8e44ad; 
+  }
