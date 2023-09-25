@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="shortcut icon" type="image/png" href="flashcard.png" />
+    <link rel="stylesheet" href="p1.css">
+    <title>FlashLearnIt</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="container">
+                <div id="header">
+                    <h1>Flashcards</h1>
+                    <div>
+                        <button id="show_card_box">Add Cards</button>
+                        <button id="delete_cards">Delete Cards</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <div id="create_card">
+                    <h2>Create Flashcard</h2>
+                    <br>
+                    <h3>
+                        <label for="question">Question</label>
+                    </h3>
+                    <textarea id="question" maxlength="280"></textarea>
+                    <h3>
+                        <label for="answer">Answer</label>
+                    </h3>
+                    <textarea id="answer"></textarea>
+                    <br>
+                    <br>
+                    <div>
+                        <button id="save_card">Save</button>
+                        <button id="close_card_box">Close</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div id="flashcards"></div>
+            </div>
+        </section>
+
+    </main>
+    <script src="p1.js"></script>
+</body>
+
+</html>
